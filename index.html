@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIKI Official — GAME RECOGNIZE GAME Campaign</title>
+  <meta name="description" content="NIKI Official Store: GAME RECOGNIZE GAME collection. Take your look beyond the court with the latest Shoes, Cloud Slides, Tech Fleece Joggers, and Down Coats.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="top-announcement-bar">
+    <div class="container announcement-flex">
+      <div class="announcement-text">
+        <span>Free Shipping & 60-Day Returns</span> for NIKI Members. Join Us / Sign In
+      </div>
+      <div class="top-bar-controls">
+        <div class="theme-select-wrapper">
+          <label for="themeSelect" class="theme-select-label">Theme:</label>
+          <select id="themeSelect" class="theme-dropdown" aria-label="Select Theme Color">
+            <option value="infrared">🔥 Infrared Red</option>
+            <option value="volt">⚡ Volt Electric</option>
+            <option value="cyber">🌊 Cyber Cyan</option>
+            <option value="light">☀️ Clean Light</option>
+          </select>
+        </div>
+        <select id="currencySelect" class="currency-dropdown" aria-label="Select Currency">
+          <option value="USD">$ USD</option>
+          <option value="EUR">€ EUR</option>
+          <option value="GBP">£ GBP</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-flex">
+      <a href="#" class="brand-link" id="brandLogo">
+        <svg viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 32C25 32 65 18 95 4C60 22 25 36 5 32Z" fill="var(--primary-accent)"/>
+          <path d="M5 32C35 28 75 14 95 4C55 18 20 34 5 32Z" fill="var(--text-primary)"/>
+        </svg>
+        <span class="brand-title">NIKI</span>
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="#hero" class="nav-item-link active">Campaign</a></li>
+        <li><a href="#categories" class="nav-item-link">Categories</a></li>
+        <li><a href="#shop" class="nav-item-link">Storefront</a></li>
+        <li><a href="#benefits" class="nav-item-link">Member Perks</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="search-wrapper">
+          <span class="search-icon-img">🔍</span>
+          <input type="text" id="searchInput" class="search-input-field" placeholder="Search Shoes, Joggers, Coats...">
+        </div>
+
+        <button class="action-icon-btn" id="cartBtn" aria-label="View Shopping Bag">
+          🛍️
+          <span class="cart-count-badge" id="cartBadge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- NIKE JORDAN "GAME RECOGNIZE GAME" HERO CAMPAIGN SECTION -->
+  <section class="hero-campaign-section" id="hero">
+    <!-- Atmospheric Background Photography -->
+    <img src="images/campaign_hero_bg.png" alt="NIKI Street Court Campaign" class="campaign-banner-bg">
+    <div class="campaign-overlay-gradient"></div>
+
+    <!-- Floating Lifestyle Card Overlay (Left) -->
+    <div class="collage-card-left">
+      <img src="images/campaign_group.png" alt="NIKI Streetwear Athlete Group">
+    </div>
+
+    <!-- Floating Lifestyle Card Overlay (Right) -->
+    <div class="collage-card-right">
+      <img src="images/campaign_athlete_main.png" alt="NIKI Athlete Portrait">
+    </div>
+
+    <!-- Main Content Layout Overlay -->
+    <div class="container campaign-layout-container">
+      <div class="campaign-hero-content">
+        <h1 class="campaign-main-title">GAME RECOGNIZE GAME</h1>
+        <p class="campaign-subtitle-text">
+          Take your look beyond the court with the latest collection, inspired by the love of the game.
+        </p>
+        <div class="campaign-cta-row">
+          <a href="#shop" class="btn-nike-impact">SHOP THE COLLECTION ⚡</a>
+          <a href="#shop" class="btn-nike-outline">EXPLORE SHOES, SLIDES & COATS</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED CATEGORIES SECTION -->
+  <section class="categories-editorial-section" id="categories">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title-text">LOOK BEYOND THE COURT</h2>
+        <p class="section-subtitle-text">Explore high-performance Shoes, Cloud Slides, Tech Joggers, and Insulated Coats</p>
+      </div>
+
+      <div class="categories-visual-grid">
+        <a href="#shop" class="category-visual-card" onclick="setCategoryFilter('shoes')">
+          <img src="images/shoe_1.png" alt="Shoes & Sneakers" class="category-card-bg-img">
+          <div class="category-card-overlay"></div>
+          <div class="category-card-content">
+            <h3 class="category-card-name">Shoes & Sneakers</h3>
+            <p class="category-card-desc">Air Pro & Jordan Retro Series</p>
+          </div>
+        </a>
+
+        <a href="#shop" class="category-visual-card" onclick="setCategoryFilter('slippers')">
+          <img src="images/slipper_1.png" alt="Slides & Slippers" class="category-card-bg-img">
+          <div class="category-card-overlay"></div>
+          <div class="category-card-content">
+            <h3 class="category-card-name">Slides & Slippers</h3>
+            <p class="category-card-desc">Cloud Foam Recovery Comfort</p>
+          </div>
+        </a>
+
+        <a href="#shop" class="category-visual-card" onclick="setCategoryFilter('joggers')">
+          <img src="images/jogger_1.png" alt="Tech Fleece Joggers" class="category-card-bg-img">
+          <div class="category-card-overlay"></div>
+          <div class="category-card-content">
+            <h3 class="category-card-name">Tech Fleece Joggers</h3>
+            <p class="category-card-desc">Tapered Streetwear Sweatpants</p>
+          </div>
+        </a>
+
+        <a href="#shop" class="category-visual-card" onclick="setCategoryFilter('coats')">
+          <img src="images/coat_1.png" alt="Coats & Jackets" class="category-card-bg-img">
+          <div class="category-card-overlay"></div>
+          <div class="category-card-content">
+            <h3 class="category-card-name">Coats & Jackets</h3>
+            <p class="category-card-desc">Down Parkas & Technical Windbreakers</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STOREFRONT CATALOG SECTION -->
+  <section class="catalog-section" id="shop">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 32px;">
+        <h2 class="section-title-text">OFFICIAL STOREFRONT CATALOG</h2>
+        <p class="section-subtitle-text">Select your size and colorway below</p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="filter-pills-bar">
+        <button class="filter-pill active" data-category="all">All Products</button>
+        <button class="filter-pill" data-category="shoes">👟 Shoes & Sneakers</button>
+        <button class="filter-pill" data-category="slippers">🩴 Slides & Slippers</button>
+        <button class="filter-pill" data-category="joggers">👖 Tech Joggers</button>
+        <button class="filter-pill" data-category="coats">🧥 Coats & Jackets</button>
+      </div>
+
+      <!-- Controls Bar -->
+      <div class="controls-bar">
+        <div class="control-group">
+          <span class="control-label">Sort By:</span>
+          <select id="sortSelect" class="control-select">
+            <option value="featured">Featured Drops</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="rating">Highest Rated</option>
+          </select>
+        </div>
+
+        <div class="control-group">
+          <span class="control-label">Max Price:</span>
+          <input type="range" id="priceSlider" class="range-slider" min="50" max="350" value="350" step="10">
+          <span id="priceDisplay" style="font-weight: 700; color: var(--text-primary);">$350</span>
+        </div>
+
+        <div style="font-size: 13px; color: var(--text-secondary);" id="resultsCount">Showing products...</div>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="products-grid" id="productsGrid">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- NIKI MEMBER BENEFITS SECTION -->
+  <section class="member-benefits-section" id="benefits">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 40px;">
+        <h2 class="section-title-text">NIKI MEMBER BENEFITS</h2>
+        <p class="section-subtitle-text">Exclusive perks for athletes and streetwear creators</p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">🚚</div>
+          <h3 class="benefit-title">FREE SHIPPING & RETURNS</h3>
+          <p class="benefit-desc">Enjoy free shipping on orders over $150 and 60-day risk-free home try-ons.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">⚡</div>
+          <h3 class="benefit-title">MEMBER FIRST ACCESS</h3>
+          <p class="benefit-desc">Get priority access to limited edition shoe drops and seasonal coats.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">📱</div>
+          <h3 class="benefit-title">NIKI RUN & TRAINING CLUB</h3>
+          <p class="benefit-desc">Access guided audio runs, workout plans, and personalized athlete coaching.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">🌱</div>
+          <h3 class="benefit-title">MOVE TO ZERO</h3>
+          <p class="benefit-desc">Our commitment to zero carbon & zero waste to protect the future of sport.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CART SLIDE-OVER DRAWER -->
+  <div class="cart-overlay-bg" id="cartOverlay"></div>
+  <aside class="cart-slide-drawer" id="cartDrawer">
+    <div class="cart-header-row">
+      <h3 class="cart-heading-text">Shopping Bag</h3>
+      <button style="background: none; border: none; color: var(--text-primary); cursor: pointer; font-size: 18px;" id="closeCartBtn">✕</button>
+    </div>
+
+    <div class="cart-free-shipping-tracker">
+      <div class="shipping-status-label" id="shippingBarText">Add items to unlock FREE shipping</div>
+      <div class="shipping-progress-bg">
+        <div class="shipping-progress-fill" id="shippingBarFill"></div>
+      </div>
+    </div>
+
+    <div class="cart-items-container" id="cartBody">
+      <!-- Injected via JS -->
+    </div>
+
+    <div class="cart-summary-footer">
+      <div class="promo-form-box">
+        <input type="text" id="promoInput" class="input-promo" placeholder="Promo code (e.g. NIKI20)">
+        <button class="btn-apply-promo" id="promoBtn">Apply</button>
+      </div>
+
+      <div class="summary-row">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">$0.00</span>
+      </div>
+      <div class="summary-row">
+        <span>Discount</span>
+        <span id="cartDiscount" style="color: var(--primary-accent);">-$0.00</span>
+      </div>
+      <div class="summary-row total-row">
+        <span>Total</span>
+        <span id="cartTotal">$0.00</span>
+      </div>
+
+      <button class="btn-nike-impact" id="btnCheckout" style="width: 100%; justify-content: center; margin-top: 16px; padding: 16px; font-size: 18px;">
+        PROCEED TO CHECKOUT 🔒
+      </button>
+    </div>
+  </aside>
+
+  <!-- QUICK VIEW MODAL -->
+  <div class="modal-overlay-bg" id="qvOverlay">
+    <div class="modal-dialog-card" id="qvBox">
+      <button style="position: absolute; top: 20px; right: 20px; background: none; border: none; color: var(--text-primary); cursor: pointer; font-size: 20px;" id="qvCloseBtn">✕</button>
+      <div id="qvContent">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- CHECKOUT MODAL -->
+  <div class="modal-overlay-bg" id="checkoutOverlay">
+    <div class="modal-dialog-card checkout-modal-card">
+      <button style="position: absolute; top: 20px; right: 20px; background: none; border: none; color: var(--text-primary); cursor: pointer; font-size: 20px;" id="checkoutCloseBtn">✕</button>
+      <div style="text-align: center; margin-bottom: 24px;">
+        <h2 style="font-family: var(--font-impact); font-size: 28px; letter-spacing: 1px;">NIKI SECURE CHECKOUT</h2>
+        <p style="color: var(--text-secondary); font-size: 14px;">Enter your delivery details to complete your order</p>
+      </div>
+
+      <form id="checkoutForm">
+        <div class="form-grid-layout">
+          <div class="form-field">
+            <label class="form-label-text">First Name</label>
+            <input type="text" class="form-input-control" placeholder="Alex" required>
+          </div>
+          <div class="form-field">
+            <label class="form-label-text">Last Name</label>
+            <input type="text" class="form-input-control" placeholder="Morgan" required>
+          </div>
+          <div class="form-field full-width">
+            <label class="form-label-text">Email Address</label>
+            <input type="email" class="form-input-control" placeholder="alex@niki.com" required>
+          </div>
+          <div class="form-field full-width">
+            <label class="form-label-text">Delivery Address</label>
+            <input type="text" class="form-input-control" placeholder="124 Fifth Avenue, Suite 400" required>
+          </div>
+          <div class="form-field">
+            <label class="form-label-text">City</label>
+            <input type="text" class="form-input-control" placeholder="New York" required>
+          </div>
+          <div class="form-field">
+            <label class="form-label-text">Postal Code</label>
+            <input type="text" class="form-input-control" placeholder="10001" required>
+          </div>
+          <div class="form-field full-width">
+            <label class="form-label-text">Payment Method</label>
+            <select class="form-input-control" style="cursor: pointer;">
+              <option>💳 Credit / Debit Card</option>
+              <option>🍎 Apple Pay / Google Pay</option>
+              <option>⚡ NIKI Member Credit</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-nike-impact" style="width: 100%; justify-content: center; padding: 16px; font-size: 18px;">
+          CONFIRM & PLACE ORDER 🚀
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST CONTAINER -->
+  <div class="toast-stack" id="toastStack"></div>
+
+  <!-- OFFICIAL FOOTER -->
+  <footer class="footer-official">
+    <div class="container">
+      <div class="footer-cols-grid">
+        <div>
+          <h4 class="footer-col-heading">FIND A STORE</h4>
+          <ul class="footer-link-list">
+            <li><a href="#">BECOME A MEMBER</a></li>
+            <li><a href="#">ALREADY A MEMBER</a></li>
+            <li><a href="#">SEND US FEEDBACK</a></li>
+            <li><a href="#">STUDENT DISCOUNTS</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-heading">GET HELP</h4>
+          <ul class="footer-link-list">
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Shipping & Delivery</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">Payment Options</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-heading">ABOUT NIKI</h4>
+          <ul class="footer-link-list">
+            <li><a href="#">News & Stories</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Purpose & Impact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-heading">JOIN NIKI CLUB</h4>
+          <p style="color: var(--text-secondary); font-size: 13px; margin-bottom: 14px;">Receive first access to exclusive shoe drops & 20% off with promo code <strong>NIKI20</strong>.</p>
+          <div class="search-wrapper" style="width: 100%;">
+            <input type="email" class="search-input-field" placeholder="Enter your email address..." style="width: 100%; padding-left: 16px;">
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-legal-bar">
+        <p>© 2026 NIKI, Inc. All Rights Reserved.</p>
+        <p>Guides | Terms of Sale | Terms of Use | Privacy Policy</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    function setCategoryFilter(category) {
+      const pills = document.querySelectorAll('.filter-pill');
+      pills.forEach(p => p.classList.remove('active'));
+      const activePill = Array.from(pills).find(p => p.dataset.category === category);
+      if (activePill) activePill.classList.add('active');
+      state.currentCategory = category;
+      renderProducts();
+    }
+  </script>
+</body>
+</html>
